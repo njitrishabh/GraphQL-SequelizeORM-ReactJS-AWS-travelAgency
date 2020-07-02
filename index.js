@@ -1,8 +1,9 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');
-
+const cors = require('cors');
 const db = require('./config/database');
+
 db.authenticate()
     .then(function (err) {
         console.log('Connection has been established successfully.');
@@ -20,9 +21,10 @@ mysql.query(
 );
 
 const app = express();
+app.use(cors());
 app.get('/', (req, res) => res.send('INDEX'));
 // quotes routes
 app.use('/quotes', require('./routes/quotes'));
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`app listening at http://localhost:${PORT}`))

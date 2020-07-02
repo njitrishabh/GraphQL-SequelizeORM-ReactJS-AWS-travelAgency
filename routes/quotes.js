@@ -6,8 +6,7 @@ const quote = require('../models/Quotes');
 router.get('/', (req, res) =>
     quote.findAll()
         .then(quotes => {
-            console.log(quotes);
-            res.sendStatus(200);
+            res.json(quotes);
         })
         .catch(err => console.log(err))
 );

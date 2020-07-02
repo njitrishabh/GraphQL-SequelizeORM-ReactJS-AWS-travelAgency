@@ -1,0 +1,117 @@
+.App {
+  display: flex;
+  flex-direction: row;
+}
+
+.dashboard {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.table-header {
+  display: flex;
+}
+
+i.fa.fa-chevron-circle-right {
+  font-size: 30px;
+  color: #5BBFBA;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-left: 28px;
+  padding-right: 20px;
+}
+
+h2 {
+  color: #5F6CAF;
+}
+
+.button {
+  background-color: #5BBFBA;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: none;
+    outline:none;
+}
+
+.view-quote {border-radius: 30px;}
+
+thead {color:black;}
+tbody {color: black;}
+table {
+ border: 1px solid black;
+ margin: auto;
+ padding: 20px;
+}
+table {
+  width: 60vw;
+}
+td, th{
+ padding: 5px;
+ text-align: center;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width:100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.modal-main {
+  position:fixed;
+  background: white;
+  width: 80%;
+  height: auto;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  padding: 20px;
+  padding-bottom: 40px;
+}
+
+.modal-main ul {
+  list-style-type: none;
+}
+
+.modal-main ul li {
+  padding-top: 10px;
+  width: fit-content;
+  cursor: pointer;
+}
+
+.modal-body {
+  display: flex;
+}
+
+.modal-body .left {
+  font-weight: 700;
+  line-height: 30px;
+  color: #5F6CAF;
+}
+
+.modal-body .right {
+  margin-left: 40px;
+}
+
+.display-block {
+  display: block;
+}
+
+.display-none {
+  display: none;
+}
